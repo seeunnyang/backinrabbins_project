@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+    <!-- favicon, 스타일 -->
+    <link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <style>
+        main {
+            width:calc(100% - 740px); margin:0 auto;
+            /* background:lightblue; */
+        }
+        /* main > 자식 묶음 */
+        main > * {padding:50px 0; margin:0 250px;}
+        /* main title */
+        main > .title {text-align:center;}
+        main > .title h1 {
+            font-size:1.777rem; letter-spacing:-0.02em;
+            font-weight:700;
+            margin-bottom:20px;
+            color:#e01883;
+        }
+        main > .title p {font-size:1.333rem; letter-spacing:-0.02em;}
+        /* main login */
+        main .login {border-top:1px solid #f56f98;}
+        main .login .log_tit {margin-bottom:50px;}
+        main .login .log_tit .first {
+            font-size:1.333rem; letter-spacing:-0.02em;
+            margin-bottom:15px;
+        }
+        main .login .log_tit .last {
+            letter-spacing:-0.02em; color:#f56f98;
+        }
+        main .login #login_form {
+            margin-bottom:50px;
+            display:flex; justify-content:space-between;
+            align-items:center;
+            /* background:pink; */
+        }
+        main .login #login_form fieldset {
+            width:78%; 
+            /* background:lightgoldenrodyellow; */
+        }
+        main .login #login_form fieldset >div {
+            display:flex; align-items:center;
+            padding:12px 20px;
+            background:#eee;
+        }
+        main .login #login_form fieldset >div img {margin-right:20px; width:25px; height:25px;}
+        main .login #login_form fieldset >div input {width:100%; background:none;}
+        main .login #login_form fieldset .id {margin-bottom:20px;}
+        main .login #login_form fieldset .id img {}
+        main .login #login_form fieldset .id #user_id {}
+        main .login #login_form fieldset .pw {}
+        main .login #login_form fieldset .pw img {}
+        main .login #login_form fieldset .pw #user_pw {}
+        main .login #login_form .login_btn {width:20%; background:none; /* background:lightcoral; */}
+        main .login #login_form .login_btn img {width:100%;}
+        main .login .find {
+            display:flex; justify-content:space-between;
+            text-align:center; padding:0 50px;
+        }
+        main .login .find a {
+            letter-spacing:-0.02em;
+            width:33.33%;
+            margin:15px 0;
+        }
+        main .login .find a:nth-child(2) {
+            border-right:1px solid #aaa; border-left:1px solid #aaa;
+        }
+        main .login .find a:hover {color:#e01883;}
+        /* main info */
+        main .info {
+            text-align: center;
+            border-top:1px solid #aaa;
+        }
+        main .info > p {
+            /* font-size:0.75rem; */ letter-spacing:-0.02em;
+            margin-bottom:50px; line-height:18px;
+            color:#aaa;
+        }
+        main .info .benefit {padding:0 50px;}
+        main .info .benefit ul {
+            display:flex; justify-content: space-between;
+        }
+        main .info .benefit ul li {
+            width:33.3%;
+            display:flex; justify-content:center;
+            margin:0 10px;
+        }
+        main .info .benefit ul li img {
+            margin-right:5px; width:60px; height:60px;
+        }
+        main .info .benefit ul li .txt {text-align:start;}
+        main .info .benefit ul li .txt .b_tit {
+            letter-spacing:-0.02em;
+            margin-bottom:10px;
+        }
+        main .info .benefit ul li .txt .b_con {letter-spacing:-0.02em; font-size:0.75rem; line-height:18px;}
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="h_top_bg">
+            <div class="h_top">
+                <div class="sns_icon">
+                    <a href="#"><img src="./images/icon/p_facebook_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_twitter_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_blog.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
+                </div>
+                <h1><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+                <div class="search">
+                    <a href="#">고객센터</a>
+                    <a href="#">CONTACTUS</a>
+                    <a href="#"><img src="./images/icon/p_search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="h_btm_bg">
+            <div class="h_btm">
+                <div class="login">
+                    <a href="#">LOGIN</a>
+                    <a href="#">JOIN</a>
+                </div>
+                <div class="nav">
+                    <p class="line">|</p>
+                    <a href="#">FLAVOR OF THE MONTH</a>
+                    <a href="#">MENU</a>
+                    <a href="#">영양 성분 및 알레르기</a>
+                    <a href="#">EVENT</a>
+                    <a href="#">STORE</a>
+                    <a href="#">ABOUT</a>
+                </div>
+            </div>
+            <div class="open_nav_bg">
+                <div class="open_nav">
+                    <div class="login_wrap">
+                        <ul class="login">
+                            <li><a href="#"><img src="./images/icon/happy_point.png" alt=""></a></li>
+                            <li><p><em>해피포인트APP</em><br>설치하고<br>다양한 혜택을<br>받으세요!</p></li>
+                        </ul>
+                    </div>
+                    <div class="gnb_wrap">
+                        <ul class="gnb line"><li>|</li></ul>
+                        <ul class="gnb month">
+                            <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">아이스크림케이크</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">디저트</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">진행중이벤트</a></li>
+                            <li><a href="#">당첨자발표</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">점포개설문의</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="title">
+            <h1>LOGIN</h1>
+            <p>배스킨 라빈스 홈페이지에 오신 것을 환영합니다.</p>
+        </div>
+        <div class="login">
+            <div class="log_tit">
+                <p class="first">배스킨라빈스 로그인</p>
+                <p class="last">해피포인트 아이디로 간편하게 로그인 하세요.</p>
+            </div>
+            <form action="#" method="post" id="login_form">
+                <fieldset>
+                    <legend class="skip">로그인양식</legend>
+                    <div class="id">
+                        <img src="./images/icon/id.png" alt="">
+                        <input type="text" name="user_id" id="user_id" placeholder="아이디를 입력하세요.">
+                    </div>
+                    <div class="pw">
+                        <img src="./images/icon/pw.png" alt="">
+                        <input type="password" name="user_pw" id="user_pw" placeholder="비빌번호를 입력하세요.">
+                    </div>
+                </fieldset>
+                <button type="button" class="login_btn"><img src="./images/icon/login_btn.png" alt=""></button>
+            </form>
+            <div class="find">
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+                <a href="#">해피포인트 가입</a>
+            </div>
+        </div>
+        <div class="info">
+            <p>해피포인트 회원이 아니시라면 지금 해피포인트에 가입하시고<br>다양한 혜택을 경험하세요.</p>
+            <div class="benefit">
+                <ul>
+                    <li>
+                        <img src="./images/icon/benefit_1.png" alt="">
+                        <div class="txt">
+                            <p class="b_tit">혜택 하나</p>
+                            <p class="b_con">온라인 이벤트행사에 참여할 수 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/icon/benefit_2.png" alt="">
+                        <div class="txt">
+                            <p class="b_tit">혜택 둘</p>
+                            <p class="b_con">월별 신제품을 보다먼저 만날 수 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/icon/benefit_3.png" alt="">
+                        <div class="txt">
+                            <p class="b_tit">혜택 셋</p>
+                            <p class="b_con">이벤트 정보메일림을 받아 볼 수 있습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#">점포개설문의</a>
+            <a href="#">신규 직영점 입점 제의</a>
+            <a href="#">채용 문의</a>
+            <a href="#">윤리신고센터</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">영상정보처리기기운영관리방침</a>
+            <a href="#">안전보건 경영방침</a>
+            <a href="#">거래희망회사 사전등록</a>
+        </div>
+        <h2 class="logo"><a href="#"><img src="./images/footer_logo.png" alt=""></a></h2>
+        <div class="f_btm">
+            <address>
+                <p>사업자 등록번호 : 303-81-09535</p>
+                <p>비알코리아(주) 대표이사 이주연</p>
+                <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+            </address>
+            <address>
+                <p>TEL : 080-555-3131</p>
+                <p>개인정보관리책임자 : 조성희</p>
+            </address>
+            <p class="copy">Copyright &copy; 2016 BRKOREA Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./script/common.js"></script>
+</body>
+</html>
