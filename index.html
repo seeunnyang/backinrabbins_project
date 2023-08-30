@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/common.css">
 </head>
 <body>
+    <!-- header -->
     <header>
         <div class="h_top_bg">
             <div class="h_top">
@@ -42,14 +43,27 @@
                 </div>
                 <div class="nav">
                     <p class="line">|</p>
-                    <div class="month">
-                        <a href="#">FLAVOR OF THE MONTH</a>
-                        <ul class="gnb">
-                            <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
+                    <a href="#">FLAVOR OF THE MONTH</a>
+                    <a href="#">MENU</a>
+                    <a href="#">영양 성분 및 알레르기</a>
+                    <a href="#">EVENT</a>
+                    <a href="#">STORE</a>
+                    <a href="#">ABOUT</a>
+                </div>
+            </div>
+            <div class="open_nav_bg">
+                <div class="open_nav">
+                    <div class="login_wrap">
+                        <ul class="login">
+                            <li><a href="#"><img src="./images/icon/happy_point.png" alt=""></a></li>
+                            <li><p><em>해피포인트APP</em><br>설치하고<br>다양한 혜택을<br>받으세요!</p></li>
                         </ul>
                     </div>
-                    <div class="menu">
-                        <a href="#">MENU</a>
+                    <div class="gnb_wrap">
+                        <ul class="gnb line"><li>|</li></ul>
+                        <ul class="gnb month">
+                            <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
+                        </ul>
                         <ul class="gnb">
                             <li><a href="#">아이스크림</a></li>
                             <li><a href="#">아이스크림케이크</a></li>
@@ -57,32 +71,20 @@
                             <li><a href="#">커피</a></li>
                             <li><a href="#">디저트</a></li>
                         </ul>
-                    </div>
-                    <div class="nutrition">
-                        <a href="#">영양 성분 및 알레르기</a>
                         <ul class="gnb">
                             <li><a href="#">아이스크림</a></li>
                             <li><a href="#">음료</a></li>
                             <li><a href="#">커피</a></li>
                         </ul>
-                    </div>
-                    <div class="event">
-                        <a href="#">EVENT</a>
                         <ul class="gnb">
                             <li><a href="#">진행중이벤트</a></li>
                             <li><a href="#">당첨자발표</a></li>
                         </ul>
-                    </div>
-                    <div class="store">
-                        <a href="#">STORE</a>
                         <ul class="gnb">
                             <li><a href="#">매장찾기</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">단체주문</a></li>
                         </ul>
-                    </div>
-                    <div class="about">
-                        <a href="#">ABOUT</a>
                         <ul class="gnb">
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">보도자료</a></li>
@@ -92,11 +94,131 @@
                         </ul>
                     </div>
                 </div>
-                <div class="span">
-                    <span></span>
-                </div>
             </div>
         </div>
     </header>
+    
+    <!-- main -->
+    <main>
+        <div class="swiper" id="main_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"></div>
+                <div class="swiper-slide slide2"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div><!-- slide end -->
+        <section class="video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/JC2lVl0f0Lw" title="[배스킨라빈스x엄정화] 무더운 8월, 배라와 노티드가 준비한 Festival⛱ 아이스 노티드 우유 생크림🍦" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="event">
+            <div class="title">
+                <p>BR EVENT</p>
+            </div>
+            <div class="con">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/event_1.png" alt="">
+                            <div class="store">
+                                <img src="./images/icon/store.png" alt="">
+                                <p>STORE EVENT</p>
+                            </div>
+                            <p class="e_title">KT멤버십 배스킨라빈스 특별한 제휴 혜택!</p>
+                            <p class="all_times">상시진행</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/event_2.png" alt="">
+                            <div class="store">
+                                <img src="./images/icon/store.png" alt="">
+                                <p>STORE EVENT</p>
+                            </div>
+                            <p class="e_title">1회용 컵 사용 줄이기 안내</p>
+                            <p class="all_times">상시진행</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/event_3.png" alt="">
+                            <div class="store">
+                                <img src="./images/icon/store.png" alt="">
+                                <p>STORE EVENT</p>
+                            </div>
+                            <p class="e_title">배달의 민족에서 빠르게 주문하세요!</p>
+                            <p class="all_times">상시진행</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/event_4.png" alt="">
+                            <div class="store">
+                                <img src="./images/icon/store.png" alt="">
+                                <p>STORE EVENT</p>
+                            </div>
+                            <p class="e_title">요기요에서 손쉽게 주문하세요!</p>
+                            <p class="all_times">상시진행</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="store_delivery">
+            <div class="title">
+                <p>BR STORE</p>
+                <p>/</p>
+                <p>HAPPY ORDER & DELIVERY</p>
+            </div>
+            <div class="con">
+                <a href="#"><img src="./images/map.png" alt=""></a>
+                <a href="#"><img src="./images/delivery.png" alt=""></a>
+            </div>
+        </section>
+        <section class="sns">
+            <div class="title">
+                <p>SNS</p>
+            </div>
+            <div class="con">
+                <a href="#"><img src="./images/icon/p_facebook_.png" alt=""></a>
+                <a href="#"><img src="./images/icon/p_twitter_.png" alt=""></a>
+                <a href="#"><img src="./images/icon/p_blog.png" alt=""></a>
+                <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
+                <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#">점포개설문의</a>
+            <a href="#">신규 직영점 입점 제의</a>
+            <a href="#">채용 문의</a>
+            <a href="#">윤리신고센터</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">영상정보처리기기운영관리방침</a>
+            <a href="#">안전보건 경영방침</a>
+            <a href="#">거래희망회사 사전등록</a>
+        </div>
+        <h2 class="logo"><a href="#"><img src="./images/footer_logo.png" alt=""></a></h2>
+        <div class="f_btm">
+            <address>
+                <p>사업자 등록번호 : 303-81-09535</p>
+                <p>비알코리아(주) 대표이사 이주연</p>
+                <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+            </address>
+            <address>
+                <p>TEL : 080-555-3131</p>
+                <p>개인정보관리책임자 : 조성희</p>
+            </address>
+            <p class="copy">Copyright &copy; 2016 BRKOREA Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./script/common.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
