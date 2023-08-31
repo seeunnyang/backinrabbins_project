@@ -6,15 +6,78 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>배스킨라빈스</title>
-    <!-- swiper slide -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- favicon, 스타일 -->
     <link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon">
     <link rel="icon" href="파비콘.ico 경로" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./style/index.css">
+    <style>
+        main {
+            width:100%;
+            position:relative;/* box 기준 */
+        }
+        main #map {
+            z-index:50;
+            width:100%; height:750px; background:lightblue;
+        }
+        main .box {
+            z-index:999;
+            width:250px;
+            display:flex; flex-flow:column nowrap;
+            align-items: center;
+            padding:20px;
+            border: 1px solid #aaa;
+            position:absolute; top:50px; left:70px;
+            background:#fff;
+        }
+        main .box h1 {
+            font-size:1.333rem; letter-spacing:-0.02;
+            font-weight:500;
+            margin-bottom:20px;
+        }
+        main .box .search {
+            display:flex; flex-flow: column nowrap;
+            width:100%;
+        }
+        main .box .search #area {
+            margin-bottom:8px;
+            letter-spacing:-0.02; color:#aaa;
+            border:1px solid #aaa;
+            padding:2px 7px;
+        }
+        main .box .search #area option {}
+        main .box .search #shop_name {
+            margin-bottom:15px;
+            letter-spacing:-0.02; 
+            border:1px solid #aaa;
+            padding:3px 10px;
+        }
+        main .box .search #search_btn {
+            font-size:1.333rem; letter-spacing:-0.02em;
+            font-weight:500;
+            margin-bottom:20px; padding:10px 0;
+            border-radius:30px;
+            background:#f56f98; color:#fff;
+        }
+        main .box .shop {}
+        main .box .shop ul {display:flex; flex-flow: column nowrap;}
+        main .box .shop ul li {
+            padding:15px 10px;
+            border-top: 1px solid #aaa;
+        }
+        main .box .shop ul li:first-child {border-top:none;}
+        main .box .shop ul li a {}
+        main .box .shop ul li a h2 {
+            font-size:1.333rem; letter-spacing:-0.02em;
+            margin-bottom:10px;
+        }
+        main .box .shop ul li a .address {
+            font-size:0.8rem; letter-spacing:-0.02em;
+            line-height:18px; font-weight:500;
+        }
+        main .box .shop ul li a:hover h2,
+        main .box .shop ul li a:hover .address {color: #f56f98;}
+    </style>
 </head>
 <body>
     <!-- header -->
@@ -97,98 +160,68 @@
             </div>
         </div>
     </header>
-    
-    <!-- main -->
+    <!-- mian -->
     <main>
-        <div class="swiper" id="main_slide">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1"></div>
-                <div class="swiper-slide slide2"></div>
+        <div id="map"><!-- 지도삽입위치 --></div>
+        <div class="box">
+            <h1>매장찾기</h1>
+            <div class="search">
+                <select id="area">
+                    <option value="도/시 선택">도/시 선택</option>
+                    <option value="강원">강원</option>
+                    <option value="경기">경기</option>
+                    <option value="경남">경남</option>
+                    <option value="경북">경북</option>
+                    <option value="광주">광주</option>
+                    <option value="대구">대구</option>
+                    <option value="대전">대전</option>
+                    <option value="부산">부산</option>
+                    <option value="서울">서울</option>
+                    <option value="울산">울산</option>
+                    <option value="인천">인천</option>
+                    <option value="전남">전남</option>
+                    <option value="전북">전북</option>
+                    <option value="제주">제주</option>
+                    <option value="충남">충남</option>
+                    <option value="충북">충북</option>
+                </select>
+                <input type="text" name="shop_name" id="shop_name" placeholder="매장명">
+                <button type="button" id="search_btn">검색</button>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div><!-- slide end -->
-        <section class="video">
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/JC2lVl0f0Lw" title="[배스킨라빈스x엄정화] 무더운 8월, 배라와 노티드가 준비한 Festival⛱ 아이스 노티드 우유 생크림🍦" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
-        <section class="event">
-            <div class="title">
-                <p>BR EVENT</p>
-            </div>
-            <div class="con">
+            <div class="shop">
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="./images/event_1.png" alt="">
-                            <div class="store">
-                                <img src="./images/icon/store.png" alt="">
-                                <p>STORE EVENT</p>
-                            </div>
-                            <p class="e_title">KT멤버십 특별 제휴 혜택!</p>
-                            <p class="all_times">상시진행</p>
+                            <h2>SPC 스퀘어</h2>
+                            <p class="address">서울 강남구 역삼동 831-23 2층<br>
+                                02-565-1012</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/event_2.png" alt="">
-                            <div class="store">
-                                <img src="./images/icon/store.png" alt="">
-                                <p>STORE EVENT</p>
-                            </div>
-                            <p class="e_title">1회용 컵 사용 줄이기 안내</p>
-                            <p class="all_times">상시진행</p>
+                            <h2>강남대로</h2>
+                            <p class="address">서울 강남구 강남대로 442 (역삼동)<br>
+                                02-561-1217</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/event_3.png" alt="">
-                            <div class="store">
-                                <img src="./images/icon/store.png" alt="">
-                                <p>STORE EVENT</p>
-                            </div>
-                            <p class="e_title">배달의 민족에서 빠르게 주문하세요!</p>
-                            <p class="all_times">상시진행</p>
+                            <h2>강남신논현</h2>
+                            <p class="address">서울 서초구 강남대로69길 8 (서초동)<br>
+                                02-532-0091</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="./images/event_4.png" alt="">
-                            <div class="store">
-                                <img src="./images/icon/store.png" alt="">
-                                <p>STORE EVENT</p>
-                            </div>
-                            <p class="e_title">요기요에서 손쉽게 주문하세요!</p>
-                            <p class="all_times">상시진행</p>
+                            <h2>교대역</h2>
+                            <p class="address">서울 서초구 서초대로331 (서초동)<br>
+                                02-537-4801</p>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="store_delivery">
-            <div class="title">
-                <p>BR STORE</p>
-                <p>/</p>
-                <p>HAPPY ORDER & DELIVERY</p>
-            </div>
-            <div class="con">
-                <a href="#"><img src="./images/map.png" alt=""></a>
-                <a href="#"><img src="./images/delivery.png" alt=""></a>
-            </div>
-        </section>
-        <section class="sns">
-            <div class="title">
-                <p>SNS</p>
-            </div>
-            <div class="con">
-                <a href="#"><img src="./images/icon/p_facebook_.png" alt=""></a>
-                <a href="#"><img src="./images/icon/p_twitter_.png" alt=""></a>
-                <a href="#"><img src="./images/icon/p_blog.png" alt=""></a>
-                <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
-                <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
-            </div>
-        </section>
+        </div>
     </main>
-
     <!-- footer -->
     <footer>
         <div class="f_top">
@@ -219,6 +252,20 @@
 
     <!-- script -->
     <script src="./script/common.js"></script>
-    <script src="./script/index.js"></script>
+    <!-- 카카오 지도를 사용하기 위한 js 앱키 준비 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=579504e28ecb1aed540a2779d5d12016"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.494376,127.0298572);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.494376,127.0298572), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
 </body>
 </html>

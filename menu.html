@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>배스킨라빈스</title>
+    <!-- favicon, 스타일 -->
+    <link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <!-- 내부스타일 -->
+    <style>
+        main {
+            width:calc(100% - 440px); margin:50px auto;
+        }
+        main .ranking {
+            display:flex; flex-flow: column nowrap;
+            align-items: center;
+            padding: 50px 0;
+        }
+        main .ranking .r_tit {text-align: center; margin-bottom:50px;}
+        main .ranking .r_tit img {width:30px;}
+        main .ranking .r_tit h2 {
+            font-size: 1.777rem; letter-spacing:-0.02em;
+            font-weight:700;
+            font-family: 'Baloo 2', cursive;
+        }
+        main .ranking .r_con {width: 100%;}
+        main .ranking .r_con ul {
+            display: flex; justify-content: space-between;
+        }
+        main .ranking .r_con ul li {
+            width:15%;
+        }
+        main .ranking .r_con ul li a {
+            display: flex; flex-flow: column nowrap; align-items: center;
+        }
+        main .ranking .r_con ul li a img {
+            width:100%; margin-bottom:10px;
+            transition: all .5s;
+        }
+        main .ranking .r_con ul li:hover a img {
+            transform:scale(1.05);
+            transition:transform.5s;
+        }
+        main .ranking .r_con ul li a p {
+            letter-spacing:-0.02em; font-weight:500;
+            color: #aaa;
+        }
+        main .ranking .r_con ul li:hover a p {color: #f56f98;}
+        main .menu {
+            padding:50px 0;
+            text-align: center;
+        }
+        main .menu_tit {
+            display: flex; 
+            align-items: center; justify-content: center;
+            margin-bottom:50px;
+        }
+        main .menu_tit img {margin:0 10px;}
+        main .menu_tit h2 {
+            font-size: 1.777rem; letter-spacing:-0.02em;
+            font-weight:700;
+            font-family: 'Baloo 2', cursive;
+        }
+        main .menu .menu_con {}
+        main .menu .menu_con ul {
+            display: flex; flex-flow: row wrap;
+        }
+        main .menu .menu_con ul li {
+            width:25%;
+            border: 1px solid #eee;
+            padding-top:20px;
+        }
+        main .menu .menu_con ul li:hover a .ice_tit {color: #f56f98;}
+        main .menu .menu_con ul li a {}
+        main .menu .menu_con ul li a .ice_tit {
+            letter-spacing:-0.02em; font-weight: 500;
+            font-size: 1.333rem;
+        }
+        main .menu .menu_con ul li a .tag {
+            letter-spacing:-0.02em;
+            margin:10px 0; color:#aaa;
+        }
+        main .menu .menu_con ul li a img {width:70%;}
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="h_top_bg">
+            <div class="h_top">
+                <div class="sns_icon">
+                    <a href="#"><img src="./images/icon/p_facebook_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_twitter_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_blog.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
+                </div>
+                <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
+                <div class="search">
+                    <a href="#">고객센터</a>
+                    <a href="#">CONTACT US</a>
+                    <a href="#"><img src="./images/icon/p_search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="h_btm_bg">
+            <div class="h_btm">
+                <div class="login">
+                    <a href="./login.html">LOGIN</a>
+                    <a href="#">JOIN</a>
+                </div>
+                <div class="nav">
+                    <p class="line">|</p>
+                    <a href="#">FLAVOR OF THE MONTH</a>
+                    <a href="./menu.html">MENU</a>
+                    <a href="#">영양 성분 및 알레르기</a>
+                    <a href="#">EVENT</a>
+                    <a href="./map.html">STORE</a>
+                    <a href="#">ABOUT</a>
+                </div>
+            </div>
+            <div class="open_nav_bg">
+                <div class="open_nav">
+                    <div class="login_wrap">
+                        <ul class="login">
+                            <li><a href="#"><img src="./images/icon/happy_point.png" alt=""></a></li>
+                            <li><p><em>해피포인트APP</em><br>설치하고<br>다양한 혜택을<br>받으세요!</p></li>
+                        </ul>
+                    </div>
+                    <div class="gnb_wrap">
+                        <ul class="gnb line"><li>|</li></ul>
+                        <ul class="gnb month">
+                            <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="./menu.html">아이스크림</a></li>
+                            <li><a href="./menu_cake.html">아이스크림케이크</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">디저트</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">진행중이벤트</a></li>
+                            <li><a href="#">당첨자발표</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="./map.html">매장찾기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">점포개설문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mian -->
+    <main>
+        <div class="ranking">
+            <div class="r_tit">
+                <img src="./images/icon/crown.png" alt="">
+                <h2>MONTHLY BEST ICECREAM</h2>
+            </div>
+            <div class="r_con">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/lang01.png" alt="">
+                            <p>아이스 노티드 우유 생크림</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/lang02.png" alt="">
+                            <p>엄마는 외계인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/lang03.png" alt="">
+                            <p>아몬드 봉봉</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/lang04.png" alt="">
+                            <p>민트 초콜릿 칩</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/lang05.png" alt="">
+                            <p>뉴욕 치즈케이크</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/lang06.png" alt="">
+                            <p>슈팅스타</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu_tit">
+                <img src="./images/icon/spoon_1.png" alt="">
+                <h2>Icecream</h2>
+                <img src="./images/icon/spoon_2.png" alt="">
+            </div>
+            <div class="menu_con">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">아이스 노티드 우유 생크림</p>
+                            <p class="tag">#노티드 #이달의맛</p>
+                            <img src="./images/menu/menu01.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">초코야 민트해</p>
+                            <p class="tag">#초코야민트해</p>
+                            <img src="./images/menu/menu02.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">프릳츠 커피 아이스크림</p>
+                            <p class="tag">#프릳츠 #프릳츠커피</p>
+                            <img src="./images/menu/menu03.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">아이스 노티드 클래식 바닐라</p>
+                            <p class="tag">#아이스노티드클래식</p>
+                            <img src="./images/menu/menu04.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">춘식이가 반할수박에</p>
+                            <p class="tag">#춘식이</p>
+                            <img src="./images/menu/menu05.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">두툼 초콜릿 프레첼</p>
+                            <p class="tag">#프레첼</p>
+                            <img src="./images/menu/menu06.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">라이언 망고 마카롱</p>
+                            <p class="tag">#이달의맛 #애플망고</p>
+                            <img src="./images/menu/menu07.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">청포도 샤베트</p>
+                            <p class="tag">#청포도샤베트</p>
+                            <img src="./images/menu/menu08.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">디노 젤리</p>
+                            <p class="tag">#공룡젤리</p>
+                            <img src="./images/menu/menu09.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">사랑에 빠진 딸기</p>
+                            <p class="tag">#사빠딸</p>
+                            <img src="./images/menu/menu10.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">오레오 쿠키 앤 크림</p>
+                            <p class="tag">#오레오 #쿠키앤크림</p>
+                            <img src="./images/menu/menu11.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">블랙 소르베</p>
+                            <p class="tag">#블랙소르베</p>
+                            <img src="./images/menu/menu12.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#">점포개설문의</a>
+            <a href="#">신규 직영점 입점 제의</a>
+            <a href="#">채용 문의</a>
+            <a href="#">윤리신고센터</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">영상정보처리기기운영관리방침</a>
+            <a href="#">안전보건 경영방침</a>
+            <a href="#">거래희망회사 사전등록</a>
+        </div>
+        <h2 class="logo"><a href="#"><img src="./images/footer_logo.png" alt=""></a></h2>
+        <div class="f_btm">
+            <address>
+                <p>사업자 등록번호 : 303-81-09535</p>
+                <p>비알코리아(주) 대표이사 이주연</p>
+                <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+            </address>
+            <address>
+                <p>TEL : 080-555-3131</p>
+                <p>개인정보관리책임자 : 조성희</p>
+            </address>
+            <p class="copy">Copyright &copy; 2016 BRKOREA Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./script/common.js"></script>
+</body>
+</html>

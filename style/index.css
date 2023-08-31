@@ -12,6 +12,7 @@ main .title {
 main .title p {
     font-size:1.777rem; letter-spacing:-0.02em;
     font-weight:700;
+    font-family: 'Baloo 2', cursive;
 }
 
 /* main swiper */
@@ -72,13 +73,16 @@ main .event .con ul li a .store {
 main .event .con ul li a .store img {margin-right:10px;}
 main .event .con ul li a .store p {
     letter-spacing:-0.02em; font-weight:500;
+    font-family: 'Baloo 2', cursive;
+    color:#aaa;
 }
 main .event .con ul li a .e_title {
     font-size:1.333rem; letter-spacing:-0.02em;
-    margin:15px 0;
+    margin:13px 0;
 }
 main .event .con ul li a .all_times {
     letter-spacing:-0.02em;
+    color:#aaa;
 }
 
 /* main .store_delivery */
@@ -100,8 +104,7 @@ main .store_delivery .con a {width:50%;}
 main .store_delivery .con a img {}
 
 /* main .sns */
-main .sns {
-}
+main .sns {padding:50px 0 100px 0;}
 main .sns .title {}
 main .sns .title p {color:#224289;}
 main .sns .con {text-align: center;}

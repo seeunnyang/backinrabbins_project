@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>배스킨라빈스</title>
+    <!-- favicon, 스타일 -->
+    <link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <!-- 내부스타일 -->
+    <style>
+        main {
+            width:calc(100% - 440px); margin:50px auto;
+        }
+        main .menu {
+            padding:50px 0;
+            text-align: center;
+        }
+        main .menu_tit {
+            display: flex; 
+            align-items: center; justify-content: center;
+            margin-bottom:50px;
+        }
+        main .menu_tit img {margin:0 10px;}
+        main .menu_tit h2 {
+            font-size: 1.777rem; letter-spacing:-0.02em;
+            font-weight:700;
+            font-family: 'Baloo 2', cursive;
+        }
+        main .menu .menu_con {}
+        main .menu .menu_con ul {
+            display: flex; flex-flow: row wrap;
+        }
+        main .menu .menu_con ul li {
+            width:25%;
+            border: 1px solid #eee;
+            padding-top:20px;
+        }
+        main .menu .menu_con ul li:hover a .ice_tit {color: #f56f98;}
+        main .menu .menu_con ul li a {}
+        main .menu .menu_con ul li a .ice_tit {
+            letter-spacing:-0.02em; font-weight: 500;
+            font-size: 1.333rem;
+        }
+        main .menu .menu_con ul li a .tag {
+            letter-spacing:-0.02em;
+            margin:10px 0; color:#aaa;
+        }
+        main .menu .menu_con ul li a img {width:70%;}
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="h_top_bg">
+            <div class="h_top">
+                <div class="sns_icon">
+                    <a href="#"><img src="./images/icon/p_facebook_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_twitter_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_blog.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
+                </div>
+                <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
+                <div class="search">
+                    <a href="#">고객센터</a>
+                    <a href="#">CONTACT US</a>
+                    <a href="#"><img src="./images/icon/p_search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="h_btm_bg">
+            <div class="h_btm">
+                <div class="login">
+                    <a href="./login.html">LOGIN</a>
+                    <a href="#">JOIN</a>
+                </div>
+                <div class="nav">
+                    <p class="line">|</p>
+                    <a href="#">FLAVOR OF THE MONTH</a>
+                    <a href="./menu.html">MENU</a>
+                    <a href="#">영양 성분 및 알레르기</a>
+                    <a href="#">EVENT</a>
+                    <a href="./map.html">STORE</a>
+                    <a href="#">ABOUT</a>
+                </div>
+            </div>
+            <div class="open_nav_bg">
+                <div class="open_nav">
+                    <div class="login_wrap">
+                        <ul class="login">
+                            <li><a href="#"><img src="./images/icon/happy_point.png" alt=""></a></li>
+                            <li><p><em>해피포인트APP</em><br>설치하고<br>다양한 혜택을<br>받으세요!</p></li>
+                        </ul>
+                    </div>
+                    <div class="gnb_wrap">
+                        <ul class="gnb line"><li>|</li></ul>
+                        <ul class="gnb month">
+                            <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="./menu.html">아이스크림</a></li>
+                            <li><a href="./menu_cake.html">아이스크림케이크</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">디저트</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">진행중이벤트</a></li>
+                            <li><a href="#">당첨자발표</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="./map.html">매장찾기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">점포개설문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mian -->
+    <main>
+        <div class="menu">
+            <div class="menu_tit">
+                <img src="./images/icon/spoon_1.png" alt="">
+                <h2>Icecream Cake</h2>
+                <img src="./images/icon/spoon_2.png" alt="">
+            </div>
+            <div class="menu_con">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">내 짝꿍 프릳츠</p>
+                            <p class="tag">#프릳츠 #커피아이스크림</p>
+                            <img src="./images/menu_cake/cake01.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">노티드 스마일 크림 버니</p>
+                            <p class="tag">#크림버니 #이달의케이크</p>
+                            <img src="./images/menu_cake/cake02.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">꼭꼭 숨어라! 도날드덕</p>
+                            <p class="tag">#꼭꼭숨어라 #바닐라</p>
+                            <img src="./images/menu_cake/cake03.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">스페셜 데이</p>
+                            <p class="tag">#스페셜데이 #바닐라</p>
+                            <img src="./images/menu_cake/cake04.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">핑크 퐁당 라이언</p>
+                            <p class="tag">#베리베리스트로베리 #초콜릿</p>
+                            <img src="./images/menu_cake/cake05.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">핑크 라춘 인 원더랜드</p>
+                            <p class="tag">#베리베리스트로베리 #슈팅스타</p>
+                            <img src="./images/menu_cake/cake06.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">라이언의 서핑타임</p>
+                            <p class="tag">#라이언 #뉴욕치즈</p>
+                            <img src="./images/menu_cake/cake07.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">리얼 초고 27큐브</p>
+                            <p class="tag">#리얼초코 #27큐브</p>
+                            <img src="./images/menu_cake/cake08.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">꼭꼭 숨어라! 미니</p>
+                            <p class="tag">#미니마우스 #초콜릿</p>
+                            <img src="./images/menu_cake/cake09.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">꼭꼭 숨어라! 미키</p>
+                            <p class="tag">#미키마우스 #초콜릿</p>
+                            <img src="./images/menu_cake/cake10.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">핑크 한트 드롭</p>
+                            <p class="tag">#베리베리스트로베리</p>
+                            <img src="./images/menu_cake/cake11.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">미니 베리 타르트</p>
+                            <p class="tag">#스트로베리 #타르트</p>
+                            <img src="./images/menu_cake/cake12.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">헬로키디의 핑크 드레스</p>
+                            <p class="tag">#헬로키티</p>
+                            <img src="./images/menu_cake/cake13.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">라이언의 썸머 어드벤처</p>
+                            <p class="tag">#라이언 #이달의케이크</p>
+                            <img src="./images/menu_cake/cake14.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">초코 퐁당 브라운 베어</p>
+                            <p class="tag">#브라운베어 #초코케이그</p>
+                            <img src="./images/menu_cake/cake15.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="ice_tit">딥-한 카라멜 치즈 케이크</p>
+                            <p class="tag">#이달의케이크 #카라멜치즈</p>
+                            <img src="./images/menu_cake/cake16.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#">점포개설문의</a>
+            <a href="#">신규 직영점 입점 제의</a>
+            <a href="#">채용 문의</a>
+            <a href="#">윤리신고센터</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">영상정보처리기기운영관리방침</a>
+            <a href="#">안전보건 경영방침</a>
+            <a href="#">거래희망회사 사전등록</a>
+        </div>
+        <h2 class="logo"><a href="#"><img src="./images/footer_logo.png" alt=""></a></h2>
+        <div class="f_btm">
+            <address>
+                <p>사업자 등록번호 : 303-81-09535</p>
+                <p>비알코리아(주) 대표이사 이주연</p>
+                <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+            </address>
+            <address>
+                <p>TEL : 080-555-3131</p>
+                <p>개인정보관리책임자 : 조성희</p>
+            </address>
+            <p class="copy">Copyright &copy; 2016 BRKOREA Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./script/common.js"></script>
+</body>
+</html>

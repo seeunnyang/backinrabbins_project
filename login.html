@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="./style/common.css">
     <style>
         main {
-            width:calc(100% - 740px); margin:0 auto;
-            /* background:lightblue; */
+            width:calc(100% - 740px); margin:0 auto 50px;
         }
         /* main > 자식 묶음 */
         main > * {padding:50px 0; margin:0 250px;}
@@ -22,7 +21,8 @@
             font-size:1.777rem; letter-spacing:-0.02em;
             font-weight:700;
             margin-bottom:20px;
-            color:#e01883;
+            color:#f56f98;
+            font-family: 'Baloo 2', cursive;
         }
         main > .title p {font-size:1.333rem; letter-spacing:-0.02em;}
         /* main login */
@@ -39,12 +39,8 @@
             margin-bottom:50px;
             display:flex; justify-content:space-between;
             align-items:center;
-            /* background:pink; */
         }
-        main .login #login_form fieldset {
-            width:78%; 
-            /* background:lightgoldenrodyellow; */
-        }
+        main .login #login_form fieldset {width:78%;}
         main .login #login_form fieldset >div {
             display:flex; align-items:center;
             padding:12px 20px;
@@ -58,7 +54,7 @@
         main .login #login_form fieldset .pw {}
         main .login #login_form fieldset .pw img {}
         main .login #login_form fieldset .pw #user_pw {}
-        main .login #login_form .login_btn {width:20%; background:none; /* background:lightcoral; */}
+        main .login #login_form .login_btn {width:20%; background:none;}
         main .login #login_form .login_btn img {width:100%;}
         main .login .find {
             display:flex; justify-content:space-between;
@@ -79,7 +75,7 @@
             border-top:1px solid #aaa;
         }
         main .info > p {
-            /* font-size:0.75rem; */ letter-spacing:-0.02em;
+            letter-spacing:-0.02em;
             margin-bottom:50px; line-height:18px;
             color:#aaa;
         }
@@ -115,10 +111,10 @@
                     <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
                     <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
                 </div>
-                <h1><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+                <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
                 <div class="search">
                     <a href="#">고객센터</a>
-                    <a href="#">CONTACTUS</a>
+                    <a href="#">CONTACT US</a>
                     <a href="#"><img src="./images/icon/p_search.png" alt=""></a>
                 </div>
             </div>
@@ -126,16 +122,16 @@
         <div class="h_btm_bg">
             <div class="h_btm">
                 <div class="login">
-                    <a href="#">LOGIN</a>
+                    <a href="./login.html">LOGIN</a>
                     <a href="#">JOIN</a>
                 </div>
                 <div class="nav">
                     <p class="line">|</p>
                     <a href="#">FLAVOR OF THE MONTH</a>
-                    <a href="#">MENU</a>
+                    <a href="./menu.html">MENU</a>
                     <a href="#">영양 성분 및 알레르기</a>
                     <a href="#">EVENT</a>
-                    <a href="#">STORE</a>
+                    <a href="./map.html">STORE</a>
                     <a href="#">ABOUT</a>
                 </div>
             </div>
@@ -153,8 +149,8 @@
                             <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
                         </ul>
                         <ul class="gnb">
-                            <li><a href="#">아이스크림</a></li>
-                            <li><a href="#">아이스크림케이크</a></li>
+                            <li><a href="./menu.html">아이스크림</a></li>
+                            <li><a href="./menu_cake.html">아이스크림케이크</a></li>
                             <li><a href="#">음료</a></li>
                             <li><a href="#">커피</a></li>
                             <li><a href="#">디저트</a></li>
@@ -169,7 +165,7 @@
                             <li><a href="#">당첨자발표</a></li>
                         </ul>
                         <ul class="gnb">
-                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="./map.html">매장찾기</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">단체주문</a></li>
                         </ul>
@@ -178,7 +174,6 @@
                             <li><a href="#">보도자료</a></li>
                             <li><a href="#">채용정보</a></li>
                             <li><a href="#">점포개설문의</a></li>
-                            <li><a href="#">CONTACT US</a></li>
                         </ul>
                     </div>
                 </div>
