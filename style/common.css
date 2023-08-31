@@ -1,5 +1,10 @@
 /* header, footer */
-body > * {min-width:1200px;}
+body > * {min-width:1440px;}
+
+/* 작업물 표시 */
+#work {color: #f56f98;}
+
+/* header */
 header {width:100%; margin:0 auto;}
 /* header top */
 header .h_top_bg {border-bottom:1px solid #E01883; padding:10px 0;}
@@ -50,9 +55,11 @@ header .h_btm_bg .h_btm {
     width:calc(100% - 440px); margin:0 auto;
     display:flex;
     justify-content:space-between;
+    /* background:lightblue; */
 }
 header .h_btm_bg .h_btm .login {
     width:12%;
+    display: flex; align-items: center;
 }
 header .h_btm_bg .h_btm .login a {
     display:inline-block;
@@ -69,37 +76,41 @@ header .h_btm_bg .h_btm .nav {
     z-index:100;
 }
 header .h_btm_bg .h_btm .nav .line {
-    color:#f56f98; padding:15px 0;
+    padding:8px 0 15px;
+    color:#f56f98; 
 }
 header .h_btm_bg .h_btm .nav > a {
     display:inline-block; 
     width:180px; text-align:center;
     letter-spacing:-0.02em; font-weight:500;
-    padding:15px 0; 
+    padding:15px 0 13px;
     font-family: 'Baloo 2', cursive;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
 }
 header .h_btm_bg .h_btm .nav > a:nth-child(4) {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1rem; margin-top: -4px;
+    font-size: 1rem; 
+    padding:15px 0;
 }
 
 /* open nav */
 header .h_btm_bg .open_nav_bg {
-    background:lightblue;
+    /* background:lightblue; */
+    z-index: 999;
+    background:#fff;
     width:100%; margin:0 auto;
-    /* padding:0 220px; */
+    padding-top:20px;
     position:absolute; top:48px;
     border-bottom:1px solid #f56f98;
 }
 header .h_btm_bg .open_nav_bg .open_nav {
-    background:lightgrey;
+    /* background:lightgrey; */
     width:calc(100% - 440px); margin:0 auto;
     display:flex; justify-content:space-between;
 }
 header .h_btm_bg .open_nav_bg .open_nav .login_wrap {
     width:12%; z-index:999;
-    background:lightgoldenrodyellow;
+    /* background:lightgoldenrodyellow; */
 }
 header .h_btm_bg .open_nav_bg .open_nav .login_wrap .login  { 
     display:flex; flex-flow:row nowrap;
@@ -117,7 +128,7 @@ header .h_btm_bg .open_nav_bg .open_nav .gnb_wrap {
     display:flex; justify-content:space-between;
     width:88%;
     z-index:999;
-    background:lightsalmon;
+    /* background:lightsalmon; */
 }
 header .h_btm_bg .open_nav_bg .open_nav .gnb_wrap .gnb {
     display:flex; flex-flow:column nowrap;
@@ -127,7 +138,7 @@ header .h_btm_bg .open_nav_bg .open_nav .gnb_wrap .gnb li a {
     color:#aaa;
     display:inline-block; text-align:center;
     padding:10px 0; width:180px;
-    background:lightslategray;
+    /* background:lightslategray; */
 }
 header .h_btm_bg .open_nav_bg .open_nav .gnb_wrap .gnb li a:hover {color:#f56f98;}
 /* 개별 */

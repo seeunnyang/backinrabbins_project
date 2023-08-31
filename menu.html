@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>배스킨라빈스</title>
+    <title>배스킨라빈스 - 메뉴 - 아이스크림</title>
     <!-- favicon, 스타일 -->
-    <link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon">
-    <link rel="icon" href="파비콘.ico 경로" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
     <!-- 내부스타일 -->
@@ -39,7 +39,7 @@
             display: flex; flex-flow: column nowrap; align-items: center;
         }
         main .ranking .r_con ul li a img {
-            width:100%; margin-bottom:10px;
+            width:100%; margin-bottom:15px;
             transition: all .5s;
         }
         main .ranking .r_con ul li:hover a img {
@@ -47,7 +47,7 @@
             transition:transform.5s;
         }
         main .ranking .r_con ul li a p {
-            letter-spacing:-0.02em; font-weight:500;
+            letter-spacing:-0.02em;
             color: #aaa;
         }
         main .ranking .r_con ul li:hover a p {color: #f56f98;}
@@ -83,7 +83,7 @@
         }
         main .menu .menu_con ul li a .tag {
             letter-spacing:-0.02em;
-            margin:10px 0; color:#aaa;
+            margin:15px 0; color:#aaa;
         }
         main .menu .menu_con ul li a img {width:70%;}
     </style>
@@ -116,12 +116,12 @@
                 </div>
                 <div class="nav">
                     <p class="line">|</p>
-                    <a href="#">FLAVOR OF THE MONTH</a>
-                    <a href="./menu.html">MENU</a>
-                    <a href="#">영양 성분 및 알레르기</a>
-                    <a href="#">EVENT</a>
-                    <a href="./map.html">STORE</a>
-                    <a href="#">ABOUT</a>
+                    <a href="#" class="nav_tag">FLAVOR OF THE MONTH</a>
+                    <a href="./menu.html" class="nav_tag">MENU</a>
+                    <a href="#" class="nav_tag">영양 성분 및 알레르기</a>
+                    <a href="#" class="nav_tag">EVENT</a>
+                    <a href="./map.html" class="nav_tag">STORE</a>
+                    <a href="#" class="nav_tag">ABOUT</a>
                 </div>
             </div>
             <div class="open_nav_bg">
@@ -133,13 +133,13 @@
                         </ul>
                     </div>
                     <div class="gnb_wrap">
-                        <ul class="gnb line"><li>|</li></ul>
+                        <ul class="line"><li>|</li></ul>
                         <ul class="gnb month">
                             <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
                         </ul>
                         <ul class="gnb">
-                            <li><a href="./menu.html">아이스크림</a></li>
-                            <li><a href="./menu_cake.html">아이스크림케이크</a></li>
+                            <li><a href="./menu.html" id="work">아이스크림</a></li>
+                            <li><a href="./menu_cake.html" id="work">아이스크림케이크</a></li>
                             <li><a href="#">음료</a></li>
                             <li><a href="#">커피</a></li>
                             <li><a href="#">디저트</a></li>
@@ -154,7 +154,7 @@
                             <li><a href="#">당첨자발표</a></li>
                         </ul>
                         <ul class="gnb">
-                            <li><a href="./map.html">매장찾기</a></li>
+                            <li><a href="./map.html" id="work">매장찾기</a></li>
                             <li><a href="#">고객센터</a></li>
                             <li><a href="#">단체주문</a></li>
                         </ul>
