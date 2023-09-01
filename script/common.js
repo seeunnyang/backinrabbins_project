@@ -41,3 +41,31 @@ gnb.forEach(function(t,i,a){
         nav_tag[i].style.color='#000'
     })
 })
+
+
+
+//h_header open_nav 
+//변수생성
+const open_nav_btn = document.querySelector('header .t_header_bg .t_header .out .out_m #open_nav_btn') /* a태그 */
+const t_open_nav = document.querySelector('header .t_header_bg .t_header .t_open_nav') 
+const close_btn = document.querySelector('header .t_header_bg .t_header .t_open_nav .in_top #close_btn') /* a태그 */
+const t_header = document.querySelector('header .t_header_bg')
+const main_warp = document.querySelector('main')
+console.log(open_nav_btn, t_open_nav, close_btn)
+console.log(t_header, main_warp)
+//초기 open_nav 숨기기
+t_open_nav.style.display='none'
+//open_nav_btn 클릭시 open_nav 보이기
+open_nav_btn.addEventListener('click',function(e){
+    e.preventDefault()
+    t_open_nav.style.display='block'
+    // t_header.style.background='rgba(0, 0, 0, 0.1)'
+    // main_warp.style.background='rgba(0, 0, 0, 0.1)'
+})
+//close_btn 클릭시 open_nav 숨기기
+close_btn.addEventListener('click',function(e){
+    e.preventDefault()
+    t_open_nav.style.display='none'
+    // t_header.style.background='#fff'
+    // main_warp.style.background='#fff'
+})

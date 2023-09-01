@@ -102,6 +102,7 @@ main .store_delivery .con {
 }
 main .store_delivery .con a {width:50%;}
 main .store_delivery .con a img {}
+main .m_store_delivery {display: none;}
 
 /* main .sns */
 main .sns {padding:50px 0 100px 0;}
@@ -111,3 +112,93 @@ main .sns .con {text-align: center;}
 main .sns .con a {margin:0 7px;}
 main .sns .con a img {border:1px solid #D3C7C0; border-radius:50%; width:80px;}
 main .sns .con a img:hover {border:1px solid #f56f98; border-radius:50%;}
+
+
+/* Tablet */
+@media screen and (max-width:1024px) {
+    /* main_slide */
+    main #main_slide {
+        width:1024px; height:355px;
+    }
+    main #main_slide .swiper-button-prev,
+    main #main_slide .swiper-button-next {width:50px; height:50px;}
+    /* video */
+    main .video {
+        width:100%; margin:0 auto;
+    }
+    main .video iframe {
+        width:924px; height:519px;  
+    }
+    /* event */
+    main .event {
+        width:calc(100% - 100px); margin:0 auto;
+        display:flex; flex-flow:column nowrap;
+    }
+    main .event .con ul li a .store p {
+        letter-spacing:-0.02em; font-weight:500;
+        font-family: 'Baloo 2', cursive;
+        color:#aaa;
+    }
+    main .event .con ul li a .e_title {
+        font-size:1rem; letter-spacing:-0.02em;
+        margin:13px 0;
+    }
+    main .event .con ul li a .all_times {
+        font-size:0.75rem; letter-spacing:-0.02em;
+        color:#aaa;
+    }
+    /* store_delivery */
+    main .store_delivery .con a img {width:512px;}
+}
+
+/* mobail */
+@media screen and (max-width:430px) {
+    /* main > section 묶음 */
+    main > section {
+        padding:50px 0;
+    }
+    /* title 묶음 */
+    main .title {
+        text-align:center;
+        padding-bottom:30px;
+    }
+    /* main swiper */
+    main #main_slide {
+        width:430px; height:500px;
+    }
+    main #main_slide .swiper-wrapper .slide1 {
+        background:url(../images/m_banner_1.png) no-repeat center;
+        background-size:cover;
+    }
+    main #main_slide .swiper-wrapper .slide2 {
+        background:url(../images/m_banner_2.png) no-repeat center;
+        background-size:cover;
+    }
+    main #main_slide .swiper-button-prev,
+    main #main_slide .swiper-button-next {display: none;}
+    /* video */
+    main .video {display: none;}
+    /* event */
+    main .event {width:calc(100% - 100px); }
+    main .event .con ul li {width:48%;}
+    main .event .con ul li:nth-child(3),
+    main .event .con ul li:nth-child(4) {display: none;}
+    main .event .con ul li a .store p {font-size: 0.75rem;}
+    main .event .con ul li a .e_title {font-size: 0.75rem; margin:8px 0;}
+    /* store_delivery */
+    main .store_delivery {display: none;}
+    main .m_store_delivery {display: block;}
+    main .m_store_delivery > div .tit {
+        font-size:1.777rem; letter-spacing:-0.02em;
+        font-weight:700;
+        font-family: 'Baloo 2', cursive;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    main .m_store_delivery .t_store .tit {color: #224289;}
+    main .m_store_delivery .t_delivery .tit {color: #E01883; margin-top:30px;}
+    main .m_store_delivery > div a {width:100%;}
+    main .m_store_delivery > div a img {width:100%;}
+    /* sns */
+    main .sns .con a img {width:50px;}
+}/* 430 end */
