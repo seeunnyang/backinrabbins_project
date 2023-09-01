@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>배스킨라빈스 - 메뉴 - 아이스 노티드 우유 생크림</title>
+    <!-- favicon, 스타일 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <!-- 내부 스타일 -->
+    <style>
+        main {width:calc(100% - 440px); margin:50px auto; position: relative;}
+        /* main btn */
+        main .btn {z-index: 900; width:100px;}
+        main .btn img {width:100%;}
+        main .prev {position: absolute; top: 200px; left: 0;}
+        main .next {position: absolute; top: 200px; right: 0;}
+        /* main .menu */
+        main .menu {}
+        main .menu .title {
+            display: flex; flex-flow: column nowrap; align-items: center;
+            padding:0 0 50px 0;
+        }
+        main .menu .title img {margin-bottom:20px;}
+        main .menu .title .txt {
+            display: flex; flex-flow: column nowrap; align-items: center;
+        }
+        main .menu .title .txt .eg {
+            font-size: 0.75rem; letter-spacing:-0.02em;
+            font-weight: 500; color: #f56f98;
+        }
+        main .menu .title .txt h1 {
+            font-size: 3.157rem; letter-spacing:-0.02em;
+            margin:10px 0;
+        }
+        main .menu .title .txt .tit_info {
+            letter-spacing:-0.02em; color: #aaa;
+        }
+        main .menu .menu_con {
+            display: flex; flex-flow: column nowrap; align-items: center;
+            position: relative;
+        }
+        main .menu .menu_con img {width:250px;}
+        main .menu .menu_con button {
+            letter-spacing:-0.02em; font-weight:700;
+            padding: 20px 80px;
+            background: #f56f98; color: #fff;
+            border-radius: 30px; z-index: 900;
+        }
+        main .menu .menu_con button:hover {
+            box-shadow: 1px 1px 5px 1px gray;
+        }
+        main .menu .menu_con .line {
+            display: block;
+            width: 100%; height:2px;
+            background: #f56f98;
+            position: absolute; bottom: 25px; left: 0;
+            z-index: 100;
+        }
+        /* main .size */
+        main .size {
+            padding:50px 0;
+            display: flex; flex-flow: column nowrap;
+            align-items: center;
+        }
+        main .size .s_con {
+            display: flex; justify-content: space-between;
+            width:100%;
+        }
+        main .size .s_con > div {
+            width:50%;
+            display: flex; flex-flow: column nowrap;
+            align-items: center; 
+        }
+        main .size .s_con > div .s_tit {
+            font-size: 1.333rem; letter-spacing:-0.02em;
+            font-weight:700;
+            font-family: 'Baloo 2', cursive;
+            margin-bottom: 30px;/* 이상하면 수정하기 */
+        }
+        main .size .s_con > div ul {
+            display: flex; flex-flow: row wrap; justify-content: center;
+        }
+        main .size .s_con > div ul li {
+            width:40%; height:110px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        main .size .s_con > div ul li img {margin-right:10px;}
+        main .size .s_con > div ul li .s_txt {
+            display: flex; flex-flow: column nowrap;
+        }
+        main .size .s_con > div ul li .s_txt h2 {
+            letter-spacing:-0.02em;
+        }
+        main .size .s_con > div ul li .s_txt .s_info {
+            font-size: 0.75rem; letter-spacing:-0.02em;
+            line-height: 18px; width:150px;
+            margin: 10px 0;
+        }
+        main .size .s_con > div ul li .s_txt .price {
+            font-size: 0.75rem; letter-spacing:-0.02em;
+            font-weight:700; color: #f56f98;
+        }
+        main .size button {
+            letter-spacing:-0.02em; font-weight: 700; color: #f56f98;
+            border: 1px solid #f56f98; border-radius: 30px;
+            background:#fff;
+            padding: 20px 90px;
+            margin-top: 50px;
+        }
+        main .size button:hover {box-shadow: 1px 1px 5px 1px gray;}
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="h_top_bg">
+            <div class="h_top">
+                <div class="sns_icon">
+                    <a href="#"><img src="./images/icon/p_facebook_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_twitter_.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_blog.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_insta.png" alt=""></a>
+                    <a href="#"><img src="./images/icon/p_you.png" alt=""></a>
+                </div>
+                <h1><a href="./index.html"><img src="./images/logo.png" alt=""></a></h1>
+                <div class="search">
+                    <a href="#">고객센터</a>
+                    <a href="#">CONTACT US</a>
+                    <a href="#"><img src="./images/icon/p_search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="h_btm_bg">
+            <div class="h_btm">
+                <div class="login">
+                    <a href="./login.html">LOGIN</a>
+                    <a href="#">JOIN</a>
+                </div>
+                <div class="nav">
+                    <p class="line">|</p>
+                    <a href="#" class="nav_tag">FLAVOR OF THE MONTH</a>
+                    <a href="./menu.html" class="nav_tag">MENU</a>
+                    <a href="#" class="nav_tag">영양 성분 및 알레르기</a>
+                    <a href="#" class="nav_tag">EVENT</a>
+                    <a href="./map.html" class="nav_tag">STORE</a>
+                    <a href="#" class="nav_tag">ABOUT</a>
+                </div>
+            </div>
+            <div class="open_nav_bg">
+                <div class="open_nav">
+                    <div class="login_wrap">
+                        <ul class="login">
+                            <li><a href="#"><img src="./images/icon/happy_point.png" alt=""></a></li>
+                            <li><p><em>해피포인트APP</em><br>설치하고<br>다양한 혜택을<br>받으세요!</p></li>
+                        </ul>
+                    </div>
+                    <div class="gnb_wrap">
+                        <ul class="line"><li>|</li></ul>
+                        <ul class="gnb month">
+                            <li><a href="#"><img src="./images/nav_img.png" alt=""></a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="./menu.html" id="work">아이스크림</a></li>
+                            <li><a href="./menu_cake.html" id="work">아이스크림케이크</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">디저트</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">아이스크림</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">커피</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">진행중이벤트</a></li>
+                            <li><a href="#">당첨자발표</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="./map.html" id="work">매장찾기</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                        <ul class="gnb">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">점포개설문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mian -->
+    <main>
+        <a href="./menu_info_3.html" class="btn prev"><img src="./images/icon/prev_2.png" alt=""></a>
+        <a href="./menu_info_2.html" class="btn next"><img src="./images/icon/next_2.png" alt=""></a>
+        <div class="menu">
+            <div class="title">
+                <img src="./images/icon/spoon_3.png" alt="">
+                <div class="txt">
+                    <p class="eg">ICE KNOTTED MILK CREAM</p>
+                    <h1>아이스 노티드 우유 생크림</h1>
+                    <p class="tit_info">생크림 아이스크림에 핑크&옐로우 커스터드 리본과 브레드 큐브가 쏘옥!</p>
+                </div>
+            </div>
+            <div class="menu_con">
+                <img src="./images/menu/menu01.png" alt="">
+                <button type="button">구매하기</button>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="size">
+            <div class="s_con">
+                <div class="con_cup">
+                    <p class="s_tit">CON & CUP</p>
+                    <ul>
+                        <li>
+                            <img src="./images/size/size_01.gif" alt="">
+                            <div class="s_txt">
+                                <h2>싱글레귤러</h2>
+                                <p class="s_info">한가지 맛을 즐길수 있는 사이즈 (용기무게 제외 중량 115g)</p>
+                                <p class="price">3,900원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/size/size_02.gif" alt="">
+                            <div class="s_txt">
+                                <h2>싱글킹</h2>
+                                <p class="s_info">좋아하는 맛 한가지만 듬뿍맛볼 수 있는 사이즈 (중량 145g)</p>
+                                <p class="price">4,700원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/size/size_03.gif" alt="">
+                            <div class="s_txt">
+                                <h2>더블주니어</h2>
+                                <p class="s_info">두가지 맛을 한번에 즐기는 사이즈 (중량 150g)</p>
+                                <p class="price">5,100원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/size/size_04.gif" alt="">
+                            <div class="s_txt">
+                                <h2>더블레귤러</h2>
+                                <p class="s_info">아이스크림 매니아를 위한 진정한 더블 사이즈 (중량 230g)</p>
+                                <p class="price">7,300원</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hand_pack">
+                    <p class="s_tit">HAND PACK</p>
+                    <ul>
+                        <li>
+                            <img src="./images/size/size_b_01.gif" alt="">
+                            <div class="s_txt">
+                                <h2>파인트</h2>
+                                <p class="s_info">3가지 맛을 골라먹는 재미가있는 사이즈 (중량 320g)</p>
+                                <p class="price">9,800원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/size/size_b_02.gif" alt="">
+                            <div class="s_txt">
+                                <h2>쿼터</h2>
+                                <p class="s_info">4가지 맛을 골라먹는 재미가있는 사이즈 (중량 620g)</p>
+                                <p class="price">18,500원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/size/size_b_03.gif" alt="">
+                            <div class="s_txt">
+                                <h2>패밀리</h2>
+                                <p class="s_info">5가지 맛을 나눠먹는 재미가있는 사이즈 (중량 960g)</p>
+                                <p class="price">26,000원</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/size/size_b_04.gif" alt="">
+                            <div class="s_txt">
+                                <h2>하프갤런</h2>
+                                <p class="s_info">6가지 맛을 나눠먹는 재미가있는 사이즈 (중량 1200g)</p>
+                                <p class="price">31,500원</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button">목록</button>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="f_top">
+            <a href="#">점포개설문의</a>
+            <a href="#">신규 직영점 입점 제의</a>
+            <a href="#">채용 문의</a>
+            <a href="#">윤리신고센터</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">영상정보처리기기운영관리방침</a>
+            <a href="#">안전보건 경영방침</a>
+            <a href="#">거래희망회사 사전등록</a>
+        </div>
+        <h2 class="logo"><a href="#"><img src="./images/footer_logo.png" alt=""></a></h2>
+        <div class="f_btm">
+            <address>
+                <p>사업자 등록번호 : 303-81-09535</p>
+                <p>비알코리아(주) 대표이사 이주연</p>
+                <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+            </address>
+            <address>
+                <p>TEL : 080-555-3131</p>
+                <p>개인정보관리책임자 : 조성희</p>
+            </address>
+            <p class="copy">Copyright &copy; 2016 BRKOREA Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="./script/common.js"></script>
+</body>
+</html>

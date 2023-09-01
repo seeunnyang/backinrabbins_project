@@ -29,9 +29,15 @@ const gnb = document.querySelectorAll('header .h_btm_bg .open_nav_bg .open_nav .
 const nav_tag = document.querySelectorAll('header .h_btm_bg .h_btm .nav .nav_tag')
 console.log(gnb, nav_tag)
 gnb.forEach(function(t,i,a){
+    //마우스 올릴 때
     t.addEventListener('mouseover',function(e){
         e.preventDefault()
         for(let j of nav_tag){j.style.color='#000'}
         nav_tag[i].style.color='#f56f98'
+    })
+    //마우스 나갔을 때
+    t.addEventListener('mouseout',function(e){
+        e.preventDefault()
+        nav_tag[i].style.color='#000'
     })
 })

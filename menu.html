@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="./style/common.css">
     <!-- 내부스타일 -->
     <style>
+        /* 작업물 표시 */
+        .work {color: #f56f98;}
         main {
             width:calc(100% - 440px); margin:50px auto;
         }
+        /* main ranking */
         main .ranking {
             display:flex; flex-flow: column nowrap;
             align-items: center;
@@ -41,16 +44,19 @@
         main .ranking .r_con ul li a img {
             width:100%; margin-bottom:15px;
             transition: all .5s;
+            border-radius: 50%;
         }
         main .ranking .r_con ul li:hover a img {
             transform:scale(1.05);
             transition:transform.5s;
+            box-shadow: 3px 3px 5px 3px gray;
         }
         main .ranking .r_con ul li a p {
             letter-spacing:-0.02em;
             color: #aaa;
         }
         main .ranking .r_con ul li:hover a p {color: #f56f98;}
+        /* main menu */
         main .menu {
             padding:50px 0;
             text-align: center;
@@ -180,7 +186,7 @@
             <div class="r_con">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="./menu_info_1.html">
                             <img src="./images/menu/lang01.png" alt="">
                             <p>아이스 노티드 우유 생크림</p>
                         </a>
@@ -227,22 +233,22 @@
             <div class="menu_con">
                 <ul>
                     <li>
-                        <a href="#">
-                            <p class="ice_tit">아이스 노티드 우유 생크림</p>
+                        <a href="./menu_info_1.html">
+                            <p class="ice_tit work">아이스 노티드 우유 생크림</p>
                             <p class="tag">#노티드 #이달의맛</p>
                             <img src="./images/menu/menu01.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p class="ice_tit">초코야 민트해</p>
+                        <a href="./menu_info_2.html">
+                            <p class="ice_tit work">초코야 민트해</p>
                             <p class="tag">#초코야민트해</p>
                             <img src="./images/menu/menu02.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <p class="ice_tit">프릳츠 커피 아이스크림</p>
+                        <a href="./menu_info_3.html">
+                            <p class="ice_tit work">프릳츠 커피 아이스크림</p>
                             <p class="tag">#프릳츠 #프릳츠커피</p>
                             <img src="./images/menu/menu03.png" alt="">
                         </a>
