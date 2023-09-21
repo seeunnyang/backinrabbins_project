@@ -108,7 +108,7 @@ header .h_btm_bg .open_nav_bg .open_nav {
 header .h_btm_bg .open_nav_bg .open_nav .login_wrap {
     width:12%; z-index:999;
 }
-header .h_btm_bg .open_nav_bg .open_nav .login_wrap .login  { 
+header .h_btm_bg .open_nav_bg .open_nav .login_wrap .login { 
     display:flex; flex-flow:row nowrap;
     margin-top:50px;
 }
